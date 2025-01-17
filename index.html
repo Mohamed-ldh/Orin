@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+    <title>Semaine 3 S9 homework 1</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            background-color: black;
+        }
+        .space{
+            margin-left: 120px;
+        }
+        .marTop {
+            margin-top: 140px;
+        }
+        .marTop2 {
+            margin-top: 100px;
+        }
+        .decoration{
+            text-decoration: none;
+        }
+        img{
+          width: 300px;
+        }
+        .card{
+          border-radius: 20px;
+          width: 500px;
+          box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.23);
+        }
+        .abc{
+          width: 500px;
+        }
+
+        .space{
+          margin-top: 16px;
+        }
+        .txta{
+          margin-left: 10px;
+        margin-top: 16px;
+        width: 550px;
+        height: 150px;
+        border:1px solid black;
+        padding: 15px;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-radius: 0px;
+        background-color: transparent;
+        color: rgb(72, 72, 72);
+        font-weight: 500;
+        resize: none;
+      }
+      .txta:focus{
+        margin-left: 10px;
+        outline: none;
+        box-shadow: 0 0 0px #fff; 
+        border:1px solid black;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        
+        background-color: transparent;
+      }
+
+      .adjustment{
+        margin-bottom: 15px;
+        margin-left: 10px;
+        width: 550px;
+        border:1px solid black;
+        padding: 15px;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-radius: 0px;
+        background-color: transparent;
+        color: rgb(72, 72, 72);
+        font-weight: 500;
+      }
+      .adjustment:focus{
+        margin-left: 10px;
+        outline: none;
+        box-shadow: 0 0 0px #fff;
+        border:1px solid black;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        background-color: transparent;
+      }
+      li, a{
+        text-decoration: none;
+        line-height: 45px;
+        list-style: none;
+        
+        color: white;
+        
+      }
+      a{
+        text-decoration: none;
+        line-height: 45px;
+        list-style: none;
+        font-weight: 600;
+        color: white;
+        font-size: 18px
+      }
+
+      .aaaa{
+        line-height: 70px;
+        font-weight: 500;
+        font-size: 17px;
+      }
+      #sendt:focus{
+        margin-right: 50px;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid" style="font-family: 'Inter', serif;">
+      <a class="navbar-brand text-warning ms-5" style="font-size: 30px; font-weight: 600;" href="#">Orin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+          <li class="nav-item space">
+            <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+          </li>
+          <li class="nav-item space">
+            <a class="nav-link" href="#">À propos</a>
+          </li>
+          <li class="nav-item space">
+            <a class="nav-link " href="#">Nos forfaits</a>
+          </li>
+          <li class="nav-item space">
+            <a class="nav-link" href="#">Nos coiffeurs</a>
+          </li>
+          <li class="nav-item space">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-warning bg-warning text-light me-5" style="width: 140px; font-weight: 600; font-size: 15px; border-radius: 14px; " type="submit">S'inscrire</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+      <div>
+        <h1 class="text-light text-center marTop" style="font-family: 'Milonga', serif; font-size: 70px;"><span style="font-size: 60px;">la vie n'est pas parfaite</span><br> <span style="font-size: 80px;">mais tes cheveux peuvent l'être !</span></h1>
+        <p class="text-light text-center marTop2" style="font-family: 'Inter', serif; word-spacing: 2px; letter-spacing: 1px; font-weight: 400;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non<br> deserunt ullamco est sit aliqua dolor do amet sint</p>
+        <button class="btn btn-outline-warning bg-warning text-light" style="width: 400px; padding: 15px; font-weight: 600; font-size: 20px; border-radius: 14px; margin-left: 39%; margin-top: 55px; font-family: 'Inter', serif;">Prendre rendez-vous</button><br>
+        <div class="text-center text-warning" style="margin-top: 20px; font-size: 20px; margin-bottom: 50px;">
+          <a href="" style="font-family: 'Inter', serif;" class="text-warning decoration">se connecter</a><span style="font-family: 'Inter', serif;"> / </span><a href="" style="font-family: 'Inter', serif;" class="text-warning decoration">s'inscrire</a>
+        </div>
+      </div>
+      <div>
+        <div class="row bg-light" style="font-family: 'Inter', serif;">
+          <div class="col-lg-6">
+            <h1 style="margin-left: 72px; font-weight: 600; margin-top: 72px;"><span style="color: rgb(90, 90, 90); margin-left: 72px;line-height: 90px; font-weight: 600;">Q</span>ui sommes nous ?</h1>
+            <h5 style="margin-left: 180px; margin-top: 60px;"> <span style="font-weight: 600;">Orin ,</span> Amet minim mollit non deserunt !</h5>
+            <p style="margin-left: 190px; margin-top: 30px; font-weight: 600;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br>nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br>amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam <br>consequat sunt nostrud amet. </p>
+            <p style="margin-left: 190px; margin-top: 25px; font-weight: 600;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br>nostrud amet.Amet minim mollit non deserunt</p>
+            <p style="margin-left: 190px; margin-top: 30px; font-weight: 600;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br> nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br>amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam </p>
+            <p style="margin-left: 190px; margin-top: 30px; font-weight: 600;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>officia consequat duis enim velit mollit. Exercitation veniam consequa</p>
+            <button class="btn btn-outline-warning bg-warning text-light me-5" style="width: 440px; font-weight: 700; font-size: 25px; border-radius: 14px; margin-left: 200px; margin-top: 40px; padding: 17px; margin-bottom: 50px;" type="submit">Prendre rendez-vous</button>
+          </div>
+          <div class="col-lg-6">
+            <div class="card-img-overlay" style="margin-top: 850px;">
+              <img src="img/img1.png" style="width: 437px; height: 591px; margin-left: 1150px; margin-top: 150px;" alt="profile-image">
+              <div class="card-img-overlay thumbnail">
+                  <img src="img/img2.png" style="width: 280.24px; height: 480.53px; margin-left: 940px; margin-top: 350px;" alt="profile-image">
+                  <div class="card-img-overlay thumbnail">
+                    <img src="img/img3.png" style="width: 379px; height: 185px; margin-left: 1140px; margin-top: 700px;" alt="profile-image">
+                      <div class="card-img-overlay thumbnail">
+                      <img src="img/img4.png" style="width: 217px; height: 324px; margin-left: 1460px; margin-top: 500px;" alt="profile-image">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="row bg-light" style="font-family: 'Inter', serif;">
+        <div class="abc h-50 col-lg-4 col-md-6 col-sm-12" style="margin-left: auto;margin-right: auto; margin-bottom: 50px; margin-top: 240px;">
+          <div class="card m-3" style="width: 430px;">
+              <img src="img/img5.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 600;">Kristin Watson</h5>
+                <p class="card-text ms ms-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <p class="card-text ms ms-2" >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+              </div>
+          </div>
+      </div>
+        <div class="abc h-50 col-lg-4 col-md-6 col-sm-12" style="margin-left: auto;margin-right: auto; margin-bottom: 50px; margin-top: 240px;">
+            <div class="card m-3" style="width: 430px;">
+                <img src="img/img6.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-weight: 600;">Wade Warren</h5>
+                  <p class="card-text ms ms-2" style="margin-bottom: 59px; margin-top: 59px;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="abc h-50 col-lg-4 col-md-6 col-sm-12" style="margin-left: auto;margin-right: auto; margin-bottom: 50px; margin-top: 240px;">
+          <div class="card m-3" style="width: 430px;">
+              <img src="img/img7.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 600;">Robert Fox</h5>
+                <p class="card-text ms ms-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <p class="card-text ms ms-2" style="margin-bottom: 45px;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+    <section class="bg-light">
+      <h1 class="text-center" style="padding: 150px; padding-bottom: 50px; color: #292926; margin-bottom: 0px;">Contactez nous !</h1>
+    </section>
+
+
+    <div class="row bg-light" style="font-family: 'Inter', serif; padding-bottom: 160px;">
+      <div class="col-lg-6" style="background-color: rgba(98, 98, 98, 0.06);  padding-right: 1200px; margin-left: 360px;">
+        <form action="">
+          <input type="text" placeholder="nom" class="space adjustment form-control" style="margin-top: 35px; ">
+          <input type="email" placeholder="e-mail" class="form-control space adjustment">
+          <textarea name="" id="" class="form-control txta" placeholder="message" style="margin-bottom: 20px;"></textarea>
+          <button class="btn btn-outline-warning bg-warning text-light me-5" style="width: 140px; font-weight: 600; font-size: 15px; border-radius: 14px; margin-bottom: 25px;margin-left: 420px;" type="submit">Envoyer</button>
+          <img src="img/contact.png" style="margin-left: 550px; margin-top: -400px; width: 700px;" alt="">
+        </form>
+      </div>
+    </div>
+    <div class="row" style="font-family: 'Inter', serif;">
+      <div class="h-50 col-lg-3 col-md-6 col-sm-12">
+        <h2 class="text-warning" style="margin-left: 70px; margin-top: 50px; font-weight: 600;">Orin</h2>
+        <p class="text-light" style="margin-left: 70px; margin-top: 25px;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <div class="row" style="margin-bottom: 50px;">
+          <div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 30px; padding-left: 85px;">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 50px; height: 50px;" viewBox="0 0 448 512"><path fill="#ecb901" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 28px; padding-left: 60px;">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 52px; height: 52px;" viewBox="0 0 448 512"><path fill="#ecb901" d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 30px; padding-left: 38px;">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 50px; height: 50px;" viewBox="0 0 448 512"><path fill="#ecb901" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12" style="padding-top: 30px; margin-left: px;">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 50px; height: 50px;" viewBox="0 0 448 512"><path fill="#ecb901" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="h-50 col-lg-3 col-md-6 col-sm-12">
+            <ul class="text-light text-center">
+              <li style="margin-top: 80px;"><a href="">Acceuil</a></li>
+              <li><a class="a1" href="">A propos</a></li>
+              <li><a class="a1" href="">Nos forfaits</a></li>
+              <li><a class="a1" href="">Nos coiffeurs</a></li>
+              <li><a class="a1" href="">Contact</a></li>
+            </ul>
+      </div>
+      <div class="h-50 col-lg-3 col-md-6 col-sm-12">
+        <ul class="">
+          <li class="aaaa" style="margin-top: 80px;"><a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 30px; margin-right: 15px" viewBox="0 0 512 512"><path fill="#ecb901" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>   + 123 12 123 123</a></li>
+          <li class="aaaa"><a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 30px;  margin-right: 15px" viewBox="0 0 512 512"><path fill="#ecb901" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>  exemple.xy@gmail.com</a></li>
+          <li class="aaaa"><a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 30px;  margin-right: 15px" viewBox="0 0 384 512"><path fill="#ecb901" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>   blasa.blasa N°12 1234</a></li>
+        </ul>
+      </div>
+      <div class="h-50 col-lg-3 col-md-6 col-sm-12" style="padding-right: 100px;">
+          <h2 class="text-light" style="margin-top: 80px; font-weight: 600;">New letter</h2>
+          <p class="text-light" style="margin-top: 25px;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat </p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" style="font-weight: 600; font-size: 22px;" id="sendt" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary bg-warning rounded" style="margin-left: -50px;" type="button" id="button-addon2"><img src="img/send.png" alt="" style="width: 30px; height: 30px; padding: 4px;"></button>
+          </div>
+      </div>
+    </div>
+
+
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
