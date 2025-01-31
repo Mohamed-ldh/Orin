@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
-    <title>Semaine 3 S9 homework 1</title>
+    <title>Orin - Home</title>
     <style>
         body{
             overflow-x: hidden;
@@ -147,8 +147,9 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <button class="btn btn-outline-warning bg-warning text-light me-5" style="width: 140px; font-weight: 600; font-size: 15px; border-radius: 14px; " type="submit">S'inscrire</button>
+        <form class="d-flex">
+          <a href="login.html" class="btn btn-outline-warning bg-warning text-light me-5" id="login" onclick="login();" style="width: 140px; font-weight: 600; font-size: 15px; border-radius: 14px;">Login</a>
+          <a href="signup.html" class="btn btn-outline-warning bg-warning text-light me-5" id="signup" style="width: 140px; font-weight: 600; font-size: 15px; border-radius: 14px; ">S'inscrire</a>
         </form>
       </div>
     </div>
@@ -156,10 +157,37 @@
       <div>
         <h1 class="text-light text-center marTop" style="font-family: 'Milonga', serif; font-size: 70px;"><span style="font-size: 60px;">la vie n'est pas parfaite</span><br> <span style="font-size: 80px;">mais tes cheveux peuvent l'être !</span></h1>
         <p class="text-light text-center marTop2" style="font-family: 'Inter', serif; word-spacing: 2px; letter-spacing: 1px; font-weight: 400;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non<br> deserunt ullamco est sit aliqua dolor do amet sint</p>
-        <button class="btn btn-outline-warning bg-warning text-light" style="width: 400px; padding: 15px; font-weight: 600; font-size: 20px; border-radius: 14px; margin-left: 39%; margin-top: 55px; font-family: 'Inter', serif;">Prendre rendez-vous</button><br>
-        <div class="text-center text-warning" style="margin-top: 20px; font-size: 20px; margin-bottom: 50px;">
-          <a href="" style="font-family: 'Inter', serif;" class="text-warning decoration">se connecter</a><span style="font-family: 'Inter', serif;"> / </span><a href="" style="font-family: 'Inter', serif;" class="text-warning decoration">s'inscrire</a>
+        <button type="button" class="btn btn-outline-warning bg-warning text-light me-5" style="width: 400px; padding: 15px; font-weight: 600; font-size: 20px; border-radius: 14px; margin-left: 39%; margin-top: 55px;margin-bottom: 40px; font-family: 'Inter', serif;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Prendre rendez-vous</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="padding-top: 14%;">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-warning" id="exampleModalLabel">Prendre rendez-vous</h5>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Nom du barbier:</label>
+                    <input type="text" class="form-control" id="barbier-nom">
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Date et heure du rendez-vous:</label>
+                    <input type="date" style="margin-bottom: 7px;" class="form-control" name="" id=""><input type="time" class="form-control" name="" id="">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="msg"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-warning text-light">Envoyer un message</button>
+              </div>
+            </div>
+          </div>
         </div>
+        
       </div>
       <div>
         <div class="row bg-light" style="font-family: 'Inter', serif;">
@@ -170,7 +198,7 @@
             <p style="margin-left: 190px; margin-top: 25px; font-weight: 600;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br>nostrud amet.Amet minim mollit non deserunt</p>
             <p style="margin-left: 190px; margin-top: 30px; font-weight: 600;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br> nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br>amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam </p>
             <p style="margin-left: 190px; margin-top: 30px; font-weight: 600;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br>officia consequat duis enim velit mollit. Exercitation veniam consequa</p>
-            <button class="btn btn-outline-warning bg-warning text-light me-5" style="width: 440px; font-weight: 700; font-size: 25px; border-radius: 14px; margin-left: 200px; margin-top: 40px; padding: 17px; margin-bottom: 50px;" type="submit">Prendre rendez-vous</button>
+            <button type="button" class="btn btn-outline-warning bg-warning text-light me-5" style="width: 440px; font-weight: 700; font-size: 25px; border-radius: 14px; margin-left: 200px; margin-top: 40px; padding: 17px; margin-bottom: 50px;" type="submit" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Prendre rendez-vous</button>
           </div>
           <div class="col-lg-6">
             <div class="card-img-overlay" style="margin-top: 850px;">
@@ -269,7 +297,7 @@
         <ul class="">
           <li class="aaaa" style="margin-top: 80px;"><a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 30px; margin-right: 15px" viewBox="0 0 512 512"><path fill="#ecb901" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>   + 123 12 123 123</a></li>
           <li class="aaaa"><a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 30px;  margin-right: 15px" viewBox="0 0 512 512"><path fill="#ecb901" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>  exemple.xy@gmail.com</a></li>
-          <li class="aaaa"><a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 30px;  margin-right: 15px" viewBox="0 0 384 512"><path fill="#ecb901" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>   blasa.blasa N°12 1234</a></li>
+          <li class="aaaa"><a href=""><svg xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 30px;  margin-right: 15px" viewBox="0 0 384 512"><path fill="#ecb901" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>   ###.### N°12 1234</a></li>
         </ul>
       </div>
       <div class="h-50 col-lg-3 col-md-6 col-sm-12" style="padding-right: 100px;">
@@ -285,7 +313,9 @@
 
       
 
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
