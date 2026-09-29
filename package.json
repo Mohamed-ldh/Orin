@@ -1,0 +1,27 @@
+{
+  "name": "homework2",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Mohamed-ldh/Orin#readme",
+  "bugs": {
+    "url": "https://github.com/Mohamed-ldh/Orin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohamed-ldh/Orin.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "token": "^0.1.0"
+  }
+}
