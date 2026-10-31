@@ -19,18 +19,6 @@ app.use("/img", express.static(__dirname + "/img"));
 app.use(express.static(path.join(__dirname, "public")));
 
 
-app.get("/", function(req, res){
-    res.sendFile(__dirname + "public/index.html")
-})
-
-app.get("/", function toLogin(req, res){
-    res.sendFile(__dirname + "public/login.html")
-})
-
-app.get("/", function toSignUp(req, res){
-    res.sendFile(__dirname + "public/signup.html")
-})
-
 //-------------Users-----------------------------------------
 //post
 
