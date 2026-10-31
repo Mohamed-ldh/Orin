@@ -59,20 +59,20 @@ app.post('/login', (req, res) => {
       if (!result) {
         return res.status(400).json({ message: 'Invalid email!' });
       }
-
+      //console.log("Name:", result.nom);
       const validPass = bcrypt.compareSync(pw, result.pw);
       if (!validPass) {
         return res.status(400).json({ message: 'Invalid password!' });
       }else{
         let payload = {
-            firstname: result.firstname,
-            lastname: result.lastname,
+            nom: result.nom,
             email: result.email,
             _id: result._id,
 
         }
 
         let token = jwt.sign (payload, '123456789');
+        
         res.redirect(`/indexLogedIn.html?name=${encodeURIComponent(result.nom)}`);
       }
 
@@ -97,9 +97,9 @@ app.post('/uploadAppoint', (req, res)=>{
 
     appoint.save()
         .then(
-            (signup)=>{
+            ()=>{
                 
-                res.sendFile(__dirname + "/public/indexLogedIn.html");
+                res.redirect('/indexLogedIn.html?name='+req.query.name);
             }
         )
         .catch(
