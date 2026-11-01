@@ -12,7 +12,6 @@ const path = require("path");
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({extended: true}))
-const jwt = require('jsonwebtoken')
 const bcrypt = require("bcrypt");
 
 app.use("/img", express.static(__dirname + "/img"));
@@ -64,14 +63,6 @@ app.post('/login', (req, res) => {
       if (!validPass) {
         return res.status(400).json({ message: 'Invalid password!' });
       }else{
-        let payload = {
-            nom: result.nom,
-            email: result.email,
-            _id: result._id,
-
-        }
-
-        let token = jwt.sign (payload, '123456789');
         
         res.redirect(`/indexLogedIn.html?name=${encodeURIComponent(result.nom)}`);
       }
